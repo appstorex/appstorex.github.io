@@ -440,6 +440,65 @@
             </div>
         </div>
     </footer>
+    <script>
+        const apps = [
+            { name: 'Kinemaster', category: 'editing', logo: '/kinemaster.png', rating: '4.9', downloads: '100M+' },
+            { name: 'Spotify Premium', category: 'streaming', logo: '/spotify.png', rating: '4.8', downloads: '500M+' },
+            { name: 'CapCut Pro', category: 'editing', logo: '/capcut.jpg', rating: '4.7', downloads: '200M+' },
+            { name: 'WhatsApp Business', category: 'social', logo: '/whatsapp.webp', rating: '4.5', downloads: '50M+' },
+            { name: 'Telegram Pro', category: 'social', logo: '/Telegram.webp', rating: '4.9', downloads: '1B+' },
+            { name: 'PicsArt Premium', category: 'editing', logo: '/Picsart.webp', rating: '4.6', downloads: '150M+' },
+            { name: 'Facebook Lite', category: 'social', logo: '/facebooklite.webp', rating: '4.2', downloads: '1B+' },
+            { name: 'Netflix Mod', category: 'streaming', logo: '/netflix.jpg', rating: '4.4', downloads: '500M+' }
+        ];
+
+        function createAppCard(app) {
+            const url = `/${app.name.toLowerCase().replace(/\s+/g, '-')}-apk`;
+            return `
+                <div class="app-card glass-card p-6 rounded-[32px] group">
+                    <a href="${url}">
+                        <div class="relative mb-6">
+                            <img src="${app.logo}" class="w-20 h-20 mx-auto rounded-2xl shadow-xl group-hover:rotate-6 transition-transform" alt="${app.name}">
+                            <span class="absolute -top-2 -right-2 bg-[#AAFF00] text-[10px] font-black px-2 py-1 rounded-lg">FREE</span>
+                        </div>
+                        <h4 class="text-center font-bold text-lg mb-2">${app.name}</h4>
+                        <div class="flex justify-between items-center text-xs text-slate-400 font-medium">
+                            <span class="flex items-center gap-1"><span class="text-yellow-400 text-sm">★</span> ${app.rating}</span>
+                            <span>${app.downloads}</span>
+                        </div>
+                        <div class="mt-6 w-full py-3 bg-slate-900 text-white rounded-2xl text-center font-bold text-sm group-hover:bg-[#0066FF] transition-colors">
+                            Download Now
+                        </div>
+                    </a>
+                </div>
+            `;
+        }
+
+        const grid = document.getElementById('appsGrid');
+        function render(filter = 'all') {
+            const filtered = filter === 'all' ? apps : apps.filter(a => a.category === filter);
+            grid.innerHTML = filtered.map(createAppCard).join('');
+        }
+
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.onclick = () => {
+                document.querySelectorAll('.filter-btn').forEach(b => b.className = 'filter-btn bg-white border px-6 py-2 rounded-full whitespace-nowrap');
+                btn.className = 'filter-btn active bg-[#0066FF] text-white px-6 py-2 rounded-full whitespace-nowrap';
+                render(btn.dataset.filter);
+            };
+        });
+
+        // Simple Accordion
+        document.querySelectorAll('.faq-item button').forEach(btn => {
+            btn.onclick = () => {
+                const content = btn.nextElementSibling;
+                content.classList.toggle('open');
+                btn.querySelector('span').textContent = content.classList.contains('open') ? '−' : '+';
+            };
+        });
+
+        render();
+    </script>
 
     <script>
         document.querySelectorAll('.faq-item button').forEach(btn => {
