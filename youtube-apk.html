@@ -1,29 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EBVQ68Z288"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-EBVQ68Z288');
+</script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9759808041159779" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Download YouTube APK - AppStoreX</title>
-    <meta name="description" content="Download the latest YouTube Pro APK for Android. Enjoy ad-free streaming, background play, and 4K video downloads.">
-    <link rel="canonical" href="https://appstorex.github.io/youtube-apk">
+    <title>YouTube Pro APK Download - Ad-Free & Premium Features</title>
+    <meta name="description" content="Download YouTube Pro APK latest version. Enjoy ad-free videos, background play, and premium features for free.">
+    <link rel="canonical" href="https://appstorex.github.io/youtube-apk.html">
     
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "SoftwareApplication",
       "name": "YouTube Pro",
-      "operatingSystem": "Android",
       "applicationCategory": "MultimediaApplication",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.8",
-        "reviewCount": "12540"
-      },
+      "operatingSystem": "Android",
+      "description": "YouTube Pro APK with ad-free experience, background play, and premium features",
       "offers": {
         "@type": "Offer",
-        "price": "0.00",
+        "price": "0",
         "priceCurrency": "USD"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "AppStoreX"
       }
     }
     </script>
@@ -43,35 +52,88 @@
             font-family: 'Outfit', sans-serif;
             background-color: #f8fafc;
             color: var(--dark);
+            overflow-x: hidden;
         }
 
         .glass-card {
             background: rgba(255, 255, 255, 0.8);
             backdrop-filter: blur(12px);
             border: 1px solid rgba(255, 255, 255, 0.3);
-            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.05);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
         }
 
         .hero-gradient {
-            background: radial-gradient(circle at top right, var(--primary), #7700FF);
+            background: radial-gradient(circle at top right, #FF0000, #FF3333);
         }
 
-        .btn-download {
-            background: linear-gradient(45deg, var(--secondary), #ff0055);
-            box-shadow: 0 10px 25px -5px rgba(255, 0, 170, 0.4);
+        .nav-link {
+            position: relative;
             transition: all 0.3s ease;
         }
 
-        .btn-download:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 15px 30px -5px rgba(255, 0, 170, 0.6);
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--secondary);
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
         }
 
         .app-card {
             transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
         }
 
-        .app-card:hover { transform: translateY(-10px); }
+        .app-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .btn-primary {
+            background: linear-gradient(45deg, #FF0000, #FF3333);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .btn-primary:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px -10px #FF0000;
+        }
+
+        .feature-badge {
+            background: linear-gradient(45deg, #FF0000, #FF6666);
+            color: white;
+        }
+
+        .download-btn {
+            background: linear-gradient(45deg, #FF0000, #FF3333);
+            transition: all 0.3s ease;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px -10px rgba(255, 0, 0, 0.4);
+        }
+
+        .sidebar-card {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .accordion-content {
+            display: grid;
+            grid-template-rows: 0fr;
+            transition: grid-template-rows 0.3s ease-out;
+        }
+
+        .accordion-content.open {
+            grid-template-rows: 1fr;
+        }
     </style>
 </head>
 <body>
@@ -84,91 +146,285 @@
             </a>
             
             <div class="hidden md:flex gap-8 items-center font-medium">
-                <a href="https://appstorex.github.io/#home" class="hover:text-[#0066FF]">Home</a>
-                <a href="https://appstorex.github.io/#categories" class="hover:text-[#0066FF]">Categories</a>
-                <a href="https://appstorex.github.io/#apps" class="hover:text-[#0066FF]">Trending</a>
-                <a href="https://appstorex.github.io/#features" class="hover:text-[#0066FF]">Why Us</a>
-                <a href="/kinemaster-apk" class="bg-gradient-to-r from-[#FF00AA] to-[#ff0055] text-white px-6 py-2 rounded-full font-bold">Get Pro Apps</a>
+                <a href="https://appstorex.github.io/#home" class="nav-link">Home</a>
+                <a href="https://appstorex.github.io/#categories" class="nav-link">Categories</a>
+                <a href="https://appstorex.github.io/#apps" class="nav-link">Trending</a>
+                <a href="https://appstorex.github.io/#features" class="nav-link">Why Us</a>
+                <a href="/kinemaster-apk" class="btn-primary text-white px-6 py-2 rounded-full font-bold">Get Pro Apps</a>
             </div>
+
+            <button id="mobileBtn" class="md:hidden text-2xl">☰</button>
         </div>
     </nav>
 
-    <div class="hero-gradient pt-32 pb-20 px-6 text-white">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-8">
-            <img src="/Youtube.png" alt="YouTube Pro" class="w-32 h-32 md:w-48 md:h-48 rounded-[35px] shadow-2xl border-4 border-white/20">
-            <div class="text-center md:text-left">
-                <h1 class="text-4xl md:text-6xl font-extrabold mb-4">YouTube Pro APK</h1>
-                <p class="text-blue-100 text-lg mb-6">Experience YouTube without limits—No ads, background play, and offline viewing.</p>
-                <div class="flex flex-wrap justify-center md:justify-start gap-4">
-                    <span class="bg-white/20 px-4 py-1 rounded-full text-sm font-bold backdrop-blur-md">v19.45.36</span>
-                    <span class="bg-[#AAFF00] text-black px-4 py-1 rounded-full text-sm font-bold">MOD PREMIUM</span>
+    <section class="pt-32 pb-20 px-6 relative">
+        <div class="max-w-7xl mx-auto">
+            <!-- Breadcrumb -->
+            <div class="mb-8 text-sm text-slate-500">
+                <a href="https://appstorex.github.io/" class="hover:text-[#0066FF]">Home</a> / 
+                <a href="https://appstorex.github.io/#apps" class="hover:text-[#0066FF]">Trending Downloads</a> / 
+                <span class="text-slate-800 font-medium">YouTube Pro APK</span>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-12">
+                <!-- Main Content -->
+                <div class="lg:col-span-2">
+                    <!-- App Header -->
+                    <div class="flex flex-col md:flex-row gap-8 items-start md:items-center mb-12">
+                        <div class="w-32 h-32 bg-white rounded-3xl shadow-2xl shadow-red-500/20 flex items-center justify-center p-6">
+                            <div class="w-full h-full bg-gradient-to-br from-[#FF0000] to-[#CC0000] rounded-2xl flex items-center justify-center text-white text-5xl font-bold">YT</div>
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-3 mb-4">
+                                <h1 class="text-4xl md:text-5xl font-extrabold">YouTube Pro APK</h1>
+                                <span class="bg-red-100 text-red-700 px-3 py-1 rounded-full text-xs font-bold">MOD</span>
+                            </div>
+                            <p class="text-lg text-slate-600 mb-6">Experience YouTube without limits. Ad-free videos, background play, and premium features unlocked.</p>
+                            <div class="flex flex-wrap gap-4 items-center">
+                                <div class="flex items-center gap-2">
+                                    <span class="flex items-center gap-1 text-yellow-500">
+                                        <span class="text-xl">★</span>
+                                        <span class="font-bold text-slate-800">4.8</span>
+                                    </span>
+                                    <span class="text-slate-500">•</span>
+                                    <span class="text-slate-500">500M+ Downloads</span>
+                                </div>
+                                <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-bold">Updated: v19.45.38</span>
+                                <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-bold">Android 8.0+</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Thumbnail/Preview -->
+                    <div class="mb-12">
+                        <div class="rounded-3xl overflow-hidden shadow-2xl shadow-red-500/10 border border-slate-200">
+                            <div class="bg-gradient-to-r from-[#FF0000] to-[#CC0000] p-6 text-white">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center">
+                                            <span class="text-2xl">▶</span>
+                                        </div>
+                                        <div>
+                                            <h3 class="text-xl font-bold">YouTube Pro Preview</h3>
+                                            <p class="text-red-100">Premium Features Showcase</p>
+                                        </div>
+                                    </div>
+                                    <span class="bg-white/20 px-4 py-2 rounded-lg text-sm font-bold">DEMO</span>
+                                </div>
+                            </div>
+                            <div class="bg-slate-900 p-8">
+                                <div class="relative">
+                                    <div class="w-full h-64 bg-gradient-to-b from-red-900/30 to-slate-900 rounded-2xl flex items-center justify-center">
+                                        <div class="text-center">
+                                            <div class="w-20 h-20 bg-gradient-to-br from-[#FF0000] to-[#990000] rounded-2xl mx-auto flex items-center justify-center text-white text-4xl mb-4">YT</div>
+                                            <h4 class="text-white text-2xl font-bold mb-2">YouTube Pro</h4>
+                                            <p class="text-red-300">Ad-Free • Background Play • Premium Features</p>
+                                        </div>
+                                    </div>
+                                    <div class="absolute bottom-4 right-4 bg-red-600 text-white px-4 py-2 rounded-lg font-bold">
+                                        Play Video
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Download Section -->
+                    <div class="mb-16">
+                        <div class="glass-card rounded-3xl p-8">
+                            <h2 class="text-3xl font-bold mb-6">Download YouTube Pro</h2>
+                            <div class="grid md:grid-cols-2 gap-8 mb-8">
+                                <div class="space-y-4">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-10 h-10 bg-red-100 rounded-xl flex items-center justify-center text-red-600">✓</div>
+                                        <div>
+                                            <h4 class="font-bold">Latest Version</h4>
+                                            <p class="text-slate-500 text-sm">v19.45.38 (March 2025)</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-10 h-10 bg-red-100 rounded-xl flex items-center justify-center text-red-600">📱</div>
+                                        <div>
+                                            <h4 class="font-bold">Android Requirement</h4>
+                                            <p class="text-slate-500 text-sm">8.0 (Oreo) and above</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="space-y-4">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-10 h-10 bg-red-100 rounded-xl flex items-center justify-center text-red-600">🛡️</div>
+                                        <div>
+                                            <h4 class="font-bold">Virus Free</h4>
+                                            <p class="text-slate-500 text-sm">Scanned by 5 antiviruses</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-10 h-10 bg-red-100 rounded-xl flex items-center justify-center text-red-600">📦</div>
+                                        <div>
+                                            <h4 class="font-bold">File Size</h4>
+                                            <p class="text-slate-500 text-sm">87.5 MB (Optimized)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <a href="#download" class="download-btn text-white px-12 py-5 rounded-2xl font-bold text-xl inline-block w-full md:w-auto">
+                                    📥 Download YouTube Pro APK
+                                </a>
+                                <p class="text-slate-500 text-sm mt-4">Direct download • No redirects • 100% Safe</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Text Article Section -->
+                    <div class="mb-16">
+                        <h2 class="text-3xl font-bold mb-8">YouTube Pro: Complete Guide</h2>
+                        
+                        <div class="prose max-w-none">
+                            <div class="glass-card rounded-3xl p-8 mb-8">
+                                <h3 class="text-2xl font-bold mb-4 text-red-700">What is YouTube Pro APK?</h3>
+                                <p class="text-slate-600 mb-4">YouTube Pro is a modified version of the official YouTube application that unlocks premium features without requiring a subscription. This modded APK provides users with an enhanced YouTube experience completely free of charge.</p>
+                                <p class="text-slate-600">The application retains all the core functionality of regular YouTube while removing limitations that exist in the free version. It's particularly popular among users who want to enjoy content without interruptions.</p>
+                            </div>
+
+                            <div class="glass-card rounded-3xl p-8 mb-8">
+                                <h3 class="text-2xl font-bold mb-4 text-red-700">Key Features Unlocked</h3>
+                                <div class="grid md:grid-cols-2 gap-6">
+                                    <div class="bg-red-50 p-6 rounded-2xl">
+                                        <div class="text-red-600 text-xl mb-2">🚫</div>
+                                        <h4 class="font-bold mb-2">Ad-Free Experience</h4>
+                                        <p class="text-slate-600 text-sm">Watch videos without any advertisements. Skip all pre-roll, mid-roll, and banner ads.</p>
+                                    </div>
+                                    <div class="bg-red-50 p-6 rounded-2xl">
+                                        <div class="text-red-600 text-xl mb-2">🎵</div>
+                                        <h4 class="font-bold mb-2">Background Play</h4>
+                                        <p class="text-slate-600 text-sm">Listen to videos with screen off or while using other apps. Perfect for music and podcasts.</p>
+                                    </div>
+                                    <div class="bg-red-50 p-6 rounded-2xl">
+                                        <div class="text-red-600 text-xl mb-2">📺</div>
+                                        <h4 class="font-bold mb-2">Picture-in-Picture</h4>
+                                        <p class="text-slate-600 text-sm">Continue watching videos in a floating window while browsing other content.</p>
+                                    </div>
+                                    <div class="bg-red-50 p-6 rounded-2xl">
+                                        <div class="text-red-600 text-xl mb-2">⬇️</div>
+                                        <h4 class="font-bold mb-2">Download Videos</h4>
+                                        <p class="text-slate-600 text-sm">Save videos for offline viewing. Multiple quality options available.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="glass-card rounded-3xl p-8">
+                                <h3 class="text-2xl font-bold mb-4 text-red-700">Installation Guide</h3>
+                                <div class="space-y-6">
+                                    <div class="flex gap-4">
+                                        <div class="w-8 h-8 bg-red-100 text-red-700 rounded-full flex items-center justify-center font-bold flex-shrink-0">1</div>
+                                        <div>
+                                            <h4 class="font-bold mb-2">Enable Unknown Sources</h4>
+                                            <p class="text-slate-600">Go to Settings → Security → Enable "Unknown Sources" to allow APK installation.</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex gap-4">
+                                        <div class="w-8 h-8 bg-red-100 text-red-700 rounded-full flex items-center justify-center font-bold flex-shrink-0">2</div>
+                                        <div>
+                                            <h4 class="font-bold mb-2">Download the APK</h4>
+                                            <p class="text-slate-600">Click the download button above to get the latest YouTube Pro APK file.</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex gap-4">
+                                        <div class="w-8 h-8 bg-red-100 text-red-700 rounded-full flex items-center justify-center font-bold flex-shrink-0">3</div>
+                                        <div>
+                                            <h4 class="font-bold mb-2">Install & Enjoy</h4>
+                                            <p class="text-slate-600">Open the downloaded file and follow installation prompts. Launch YouTube Pro!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="lg:col-span-1">
+                    <div class="sticky top-32 space-y-8">
+                        <!-- App Details Card -->
+                        <div class="sidebar-card rounded-3xl p-8">
+                            <h3 class="text-xl font-bold mb-6">App Details</h3>
+                            <div class="space-y-4">
+                                <div class="flex justify-between border-b pb-3">
+                                    <span class="text-slate-500">Version</span>
+                                    <span class="font-bold">19.45.38</span>
+                                </div>
+                                <div class="flex justify-between border-b pb-3">
+                                    <span class="text-slate-500">Size</span>
+                                    <span class="font-bold">87.5 MB</span>
+                                </div>
+                                <div class="flex justify-between border-b pb-3">
+                                    <span class="text-slate-500">Android Required</span>
+                                    <span class="font-bold">8.0+</span>
+                                </div>
+                                <div class="flex justify-between border-b pb-3">
+                                    <span class="text-slate-500">Last Updated</span>
+                                    <span class="font-bold">March 15, 2025</span>
+                                </div>
+                                <div class="flex justify-between border-b pb-3">
+                                    <span class="text-slate-500">Downloads</span>
+                                    <span class="font-bold">2.4M+</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-slate-500">Security</span>
+                                    <span class="font-bold text-green-600">Verified Safe</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Features List -->
+                        <div class="sidebar-card rounded-3xl p-8">
+                            <h3 class="text-xl font-bold mb-6">Pro Features</h3>
+                            <div class="space-y-4">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-8 h-8 bg-red-100 rounded-lg flex items-center justify-center text-red-600">✓</div>
+                                    <span>No Advertisement</span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <div class="w-8 h-8 bg-red-100 rounded-lg flex items-center justify-center text-red-600">✓</div>
+                                    <span>Background Playback</span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <div class="w-8 h-8 bg-red-100 rounded-lg flex items-center justify-center text-red-600">✓</div>
+                                    <span>Picture-in-Picture Mode</span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <div class="w-8 h-8 bg-red-100 rounded-lg flex items-center justify-center text-red-600">✓</div>
+                                    <span>Video Downloading</span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <div class="w-8 h-8 bg-red-100 rounded-lg flex items-center justify-center text-red-600">✓</div>
+                                    <span>Override Resolution</span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <div class="w-8 h-8 bg-red-100 rounded-lg flex items-center justify-center text-red-600">✓</div>
+                                    <span>Return Dislike Count</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Quick Download -->
+                        <div class="sidebar-card rounded-3xl p-8 bg-gradient-to-b from-red-50 to-white">
+                            <h3 class="text-xl font-bold mb-6">Quick Download</h3>
+                            <p class="text-slate-600 mb-6">Get the latest version of YouTube Pro with all premium features unlocked.</p>
+                            <a href="#download" class="download-btn text-white px-6 py-4 rounded-2xl font-bold text-center block w-full">
+                                Download Now (v19.45.38)
+                            </a>
+                            <p class="text-slate-500 text-xs text-center mt-4">Direct link • No survey • 100MB/s</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <main class="max-w-7xl mx-auto px-6 py-12">
-        <div class="grid lg:grid-cols-3 gap-12">
-            
-            <div class="lg:col-span-2 space-y-12">
-                <section class="glass-card rounded-[32px] p-8">
-                    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-sm">
-                        <div class="p-4 bg-slate-50 rounded-2xl text-center">
-                            <p class="text-slate-400 mb-1">Size</p>
-                            <p class="font-bold">128 MB</p>
-                        </div>
-                        <div class="p-4 bg-slate-50 rounded-2xl text-center">
-                            <p class="text-slate-400 mb-1">Category</p>
-                            <p class="font-bold">Video</p>
-                        </div>
-                        <div class="p-4 bg-slate-50 rounded-2xl text-center">
-                            <p class="text-slate-400 mb-1">Price</p>
-                            <p class="font-bold text-green-600">FREE</p>
-                        </div>
-                        <div class="p-4 bg-slate-50 rounded-2xl text-center">
-                            <p class="text-slate-400 mb-1">Rating</p>
-                            <p class="font-bold">★ 4.8</p>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="text-center py-4">
-                    <a href="https://appstorex.github.io/download/youtube-pro" class="btn-download inline-block text-white text-2xl font-extrabold px-16 py-6 rounded-[2rem] w-full md:w-auto">
-                        📥 DOWNLOAD APK
-                    </a>
-                </section>
-
-                <article class="glass-card rounded-[32px] p-8 md:p-12 prose prose-slate max-w-none">
-                    <h2 class="text-3xl font-extrabold mb-6">Master Your Streaming with YouTube Pro</h2>
-                    <p class="text-slate-600 leading-relaxed mb-6">YouTube Pro APK is the ultimate modification for Android users who want to unlock the full potential of the world's largest video platform. Say goodbye to interruptions and hello to a seamless viewing experience.</p>
-                    
-                    <h3 class="text-2xl font-bold mb-4">Key Features of this Mod:</h3>
-                    <ul class="space-y-4 text-slate-600 mb-8 list-none pl-0">
-                        <li class="flex items-center gap-3"><span class="w-2 h-2 bg-[#FF00AA] rounded-full"></span> Zero Advertisements across the entire platform.</li>
-                        <li class="flex items-center gap-3"><span class="w-2 h-2 bg-[#FF00AA] rounded-full"></span> Picture-in-Picture (PiP) mode enabled.</li>
-                        <li class="flex items-center gap-3"><span class="w-2 h-2 bg-[#FF00AA] rounded-full"></span> Background Play for music and podcasts.</li>
-                        <li class="flex items-center gap-3"><span class="w-2 h-2 bg-[#FF00AA] rounded-full"></span> Override maximum resolution limits.</li>
-                    </ul>
-                </article>
-            </div>
-
-            <aside class="space-y-8">
-                <div class="glass-card rounded-[32px] p-8 bg-slate-900 text-white">
-                    <h3 class="text-xl font-bold mb-4">Security Check</h3>
-                    <div class="space-y-4">
-                        <div class="flex items-center gap-3 text-green-400 text-sm">
-                            <span class="text-xl">🛡️</span> Scanned by Norton
-                        </div>
-                        <div class="flex items-center gap-3 text-green-400 text-sm">
-                            <span class="text-xl">🛡️</span> Scanned by Lookout
-                        </div>
-                    </div>
-                </div>
-            </aside>
-        </div>
-    </main>
-
-    <section id="apps" class="py-24 px-6 bg-slate-50">
+    <!-- Trending Downloads Section (Same as Homepage) -->
+    <section id="trending" class="py-24 px-6 bg-slate-50">
         <div class="max-w-7xl mx-auto">
             <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
                 <div>
@@ -183,15 +439,62 @@
             </div>
 
             <div id="appsGrid" class="grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
-                </div>
+                <!-- Apps will be loaded here via JavaScript -->
+            </div>
 
             <div class="mt-16 text-center">
-                <button id="loadMore" class="border-2 border-[#0066FF] text-[#0066FF] px-12 py-4 rounded-2xl font-bold hover:bg-[#0066FF] hover:text-white transition">Load More Applications</button>
+                <a href="https://appstorex.github.io/#apps" class="border-2 border-[#0066FF] text-[#0066FF] px-12 py-4 rounded-2xl font-bold hover:bg-[#0066FF] hover:text-white transition">View All Applications</a>
             </div>
         </div>
     </section>
 
+    <!-- FAQ Section -->
+    <section class="py-24 px-6 bg-slate-900 text-white">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-4xl font-extrabold text-center mb-16">Frequently Asked Questions</h2>
+            
+            <div class="space-y-4">
+                <div class="faq-item border-b border-white/10 pb-4">
+                    <button class="w-full flex justify-between items-center py-4 text-left font-bold text-xl">
+                        Is YouTube Pro APK safe to use?
+                        <span class="text-[#AAFF00]">+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="overflow-hidden text-slate-400">Yes. Our YouTube Pro APK is thoroughly scanned by multiple antivirus engines before being made available. We ensure no malware or tracking code is present.</div>
+                    </div>
+                </div>
+                <div class="faq-item border-b border-white/10 pb-4">
+                    <button class="w-full flex justify-between items-center py-4 text-left font-bold text-xl">
+                        Will my account get banned?
+                        <span class="text-[#AAFF00]">+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="overflow-hidden text-slate-400">There is minimal risk as the mod doesn't interfere with Google's servers directly. However, using any modified app carries some inherent risk. Use a secondary account if concerned.</div>
+                    </div>
+                </div>
+                <div class="faq-item border-b border-white/10 pb-4">
+                    <button class="w-full flex justify-between items-center py-4 text-left font-bold text-xl">
+                        How to update YouTube Pro?
+                        <span class="text-[#AAFF00]">+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="overflow-hidden text-slate-400">Simply download the latest version from our website and install it over the existing app. Your settings and preferences will be preserved.</div>
+                    </div>
+                </div>
+                <div class="faq-item border-b border-white/10 pb-4">
+                    <button class="w-full flex justify-between items-center py-4 text-left font-bold text-xl">
+                        Does it work without root?
+                        <span class="text-[#AAFF00]">+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="overflow-hidden text-slate-400">Yes, YouTube Pro works perfectly on non-rooted devices. No special permissions or root access required.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Footer (Same as Homepage) -->
     <footer class="bg-white py-20 px-6 border-t">
         <div class="max-w-7xl mx-auto">
             <div class="grid md:grid-cols-4 gap-12 mb-16">
@@ -200,56 +503,96 @@
                         <div class="w-8 h-8 bg-black rounded-lg flex items-center justify-center text-white font-bold">X</div>
                         <span class="text-xl font-extrabold">AppStoreX</span>
                     </a>
-                    <p class="text-slate-500 max-w-sm">The web's most reliable repository for mobile applications. Serving millions of users since 2024.</p>
+                    <p class="text-slate-500 max-w-sm mb-6">The web's most reliable repository for mobile applications. Serving millions of users since 2024.</p>
+                    <div class="flex gap-4">
+                        <div class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center">FB</div>
+                        <div class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center">TW</div>
+                        <div class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center">IG</div>
+                    </div>
                 </div>
                 <div>
-                    <h4 class="font-bold mb-6">Quick Links</h4>
+                    <h4 class="font-bold mb-6">Library</h4>
                     <ul class="space-y-4 text-slate-500">
                         <li><a href="/kinemaster-apk" class="hover:text-[#0066FF]">Kinemaster Pro</a></li>
                         <li><a href="/spotify-premium-apk" class="hover:text-[#0066FF]">Spotify Mod</a></li>
+                        <li><a href="/whatsapp-business-apk" class="hover:text-[#0066FF]">WhatsApp Plus</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="font-bold mb-6">Legal</h4>
                     <ul class="space-y-4 text-slate-500">
                         <li><a href="/dmca">DMCA</a></li>
-                        <li><a href="/privacy-policy">Privacy Policy</a></li>
+                        <li><a href="/privacy-policy">Privacy</a></li>
+                        <li><a href="/terms">Terms</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="pt-8 border-t text-center text-slate-400 text-sm">
+            <div class="pt-8 border-t text-center text-slate-400 text-sm font-medium">
                 &copy; 2025 AppStoreX. Built for the community.
             </div>
         </div>
     </footer>
 
     <script>
-        // Shared App Data from Index
+        // Apps data for trending section
         const apps = [
             { name: 'Kinemaster', category: 'editing', logo: '/kinemaster.png', rating: '4.9', downloads: '100M+' },
             { name: 'Spotify Premium', category: 'streaming', logo: '/spotify.png', rating: '4.8', downloads: '500M+' },
             { name: 'CapCut Pro', category: 'editing', logo: '/capcut.jpg', rating: '4.7', downloads: '200M+' },
-            { name: 'WhatsApp Business', category: 'social', logo: '/whatsapp.webp', rating: '4.5', downloads: '50M+' }
+            { name: 'WhatsApp Business', category: 'social', logo: '/whatsapp.webp', rating: '4.5', downloads: '50M+' },
+            { name: 'Telegram Pro', category: 'social', logo: '/Telegram.webp', rating: '4.9', downloads: '1B+' },
+            { name: 'PicsArt Premium', category: 'editing', logo: '/Picsart.webp', rating: '4.6', downloads: '150M+' },
+            { name: 'Facebook Lite', category: 'social', logo: '/facebooklite.webp', rating: '4.2', downloads: '1B+' },
+            { name: 'Netflix Mod', category: 'streaming', logo: '/netflix.jpg', rating: '4.4', downloads: '500M+' }
         ];
 
         function createAppCard(app) {
-            const url = `https://appstorex.github.io/${app.name.toLowerCase().replace(/\s+/g, '-')}-apk`;
+            const url = `/${app.name.toLowerCase().replace(/\s+/g, '-')}-apk`;
             return `
                 <div class="app-card glass-card p-6 rounded-[32px] group">
                     <a href="${url}">
                         <div class="relative mb-6">
-                            <img src="${app.logo}" class="w-16 h-16 mx-auto rounded-2xl shadow-xl group-hover:rotate-6 transition-transform" alt="${app.name}">
+                            <img src="${app.logo}" class="w-20 h-20 mx-auto rounded-2xl shadow-xl group-hover:rotate-6 transition-transform" alt="${app.name}">
+                            <span class="absolute -top-2 -right-2 bg-[#AAFF00] text-[10px] font-black px-2 py-1 rounded-lg">FREE</span>
                         </div>
-                        <h4 class="text-center font-bold text-sm mb-2">${app.name}</h4>
-                        <div class="mt-4 w-full py-2 bg-slate-900 text-white rounded-xl text-center font-bold text-xs group-hover:bg-[#0066FF] transition-colors">
-                            Get Now
+                        <h4 class="text-center font-bold text-lg mb-2">${app.name}</h4>
+                        <div class="flex justify-between items-center text-xs text-slate-400 font-medium">
+                            <span class="flex items-center gap-1"><span class="text-yellow-400 text-sm">★</span> ${app.rating}</span>
+                            <span>${app.downloads}</span>
+                        </div>
+                        <div class="mt-6 w-full py-3 bg-slate-900 text-white rounded-2xl text-center font-bold text-sm group-hover:bg-[#0066FF] transition-colors">
+                            Download Now
                         </div>
                     </a>
                 </div>
             `;
         }
 
-        document.getElementById('appsGrid').innerHTML = apps.map(createAppCard).join('');
+        const grid = document.getElementById('appsGrid');
+        function render(filter = 'all') {
+            const filtered = filter === 'all' ? apps : apps.filter(a => a.category === filter);
+            grid.innerHTML = filtered.map(createAppCard).join('');
+        }
+
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.onclick = () => {
+                document.querySelectorAll('.filter-btn').forEach(b => b.className = 'filter-btn bg-white border px-6 py-2 rounded-full whitespace-nowrap');
+                btn.className = 'filter-btn active bg-[#0066FF] text-white px-6 py-2 rounded-full whitespace-nowrap';
+                render(btn.dataset.filter);
+            };
+        });
+
+        // Simple Accordion
+        document.querySelectorAll('.faq-item button').forEach(btn => {
+            btn.onclick = () => {
+                const content = btn.nextElementSibling;
+                content.classList.toggle('open');
+                btn.querySelector('span').textContent = content.classList.contains('open') ? '−' : '+';
+            };
+        });
+
+        // Initialize
+        render();
     </script>
 </body>
 </html>
